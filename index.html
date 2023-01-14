@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEATHER_APP</title>
+    <link rel="stylesheet" href="./index.css"/>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="header">Pankaj Vaishnav Weather App</div>
+      <div class="bod">
+        <div class="sidebar">
+          <div class="side-table-container">
+            <div class="get-wheather-container">
+              <button class="get-wheather-button-for-city-name" id="btn" onclick="detailsOfCityWheather()">Get Weather</button>
+            </div>
+            <div class="side-table-for-names">
+              <span class="city-name-heading">City</span>
+              <span class="each-city-names">London</span>
+              <span class="each-city-names">New York</span>
+              <span class="each-city-names">Los Angeles</span>
+              <span class="each-city-names">Las Vegas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="btns">
+            <input type="text" id="input-data-for-side" />
+            <button class="search" onclick="compareSidebarData()">Search</button>
+          </div>
+
+          <div class="table-sec">
+            <table class="table-head" border ="1" >
+              <thead class="table-head">
+                <tr class="tr1">
+                  <th class="td1">City</th>
+                  <th class="td1">Description</th>
+                  <th class="td1">Temperature(°C)</th>
+                  <th class="td1">Pressure(hPa)</th>
+                  <th class="td1">Date age (hrs)</th>
+                  <th class="td1"></th>
+                </tr>
+              </thead>
+              <tbody id="TBody"></tbody>
+            </table>
+            <h2 id="nodata-container">No data</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
