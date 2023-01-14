@@ -45,7 +45,7 @@ function detailsOfCityWheather() {
   i++;
 }
 function deleteRow(e) {
-  e.deleteRow();
+  e.remove();
 }
 
 
