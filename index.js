@@ -44,7 +44,9 @@ function detailsOfCityWheather() {
   }
   i++;
 }
-
+function remove(e){
+remove(e);
+}
 
 function compareSidebarData() {
   let input1 = document.getElementById("input-data-for-side").value;
