@@ -33,7 +33,7 @@ function detailsOfCityWheather() {
         tr.appendChild(td6);
         Tbody.appendChild(tr);
         btn12.addEventListener("click", () => {
-          deleteRow(tr);
+          remove(tr);
         });
         Cities[i - 1].classList.add("sidebar-table-border");
         let nodata = document.getElementById("nodata-container");
@@ -43,9 +43,6 @@ function detailsOfCityWheather() {
     return;
   }
   i++;
-}
-function deleteRow(e) {
-  e.remove();
 }
 
 
