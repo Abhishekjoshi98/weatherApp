@@ -45,7 +45,7 @@ function detailsOfCityWheather() {
   i++;
 }
 function remove(e){
-remove(e);
+  e.remove();
 }
 
 function compareSidebarData() {
