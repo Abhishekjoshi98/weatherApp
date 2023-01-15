@@ -52,8 +52,10 @@ function detailsOfCityWheather(arg) {
           deleteRow(tr);
         });
       });
-    ref = undefined;
+    
     }
+  ref = undefined;
+  city = undefined'
 else {
  msgCont.innerHTML = 'Invalid Search'
 }
