@@ -52,7 +52,7 @@ function detailsOfCityWheather(arg) {
           deleteRow(tr);
         });
       });
-    city = undefined;
+    ref = undefined;
     }
 else {
  msgCont.innerHTML = 'Invalid Search'
