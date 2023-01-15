@@ -5,7 +5,6 @@ function btnClickedCounter() {
   if (clicked < 4) {
     detailsOfCityWheather(Cities[clicked])
     let arrOfCities = document.getElementsByClassName('each-city-names')
-    console.log(arrOfCities)
     arrOfCities[clicked].classList.add('sidebar-table-border')
     clicked++;
   }
