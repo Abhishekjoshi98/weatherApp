@@ -14,9 +14,9 @@ function btnClickedCounter() {
 function detailsOfCityWheather(arg) {
   let ref = document.getElementById('input-data-for-side')
   let city = ref.value;
-  
+  city = arg ? arg : city;
   if (city === 'London' || city === 'New York' || city === 'Las Vegas' || city === 'Los Angeles') {
-    city = arg ? arg : city;
+    
     msgCont.innerHTML = ''
     fetch(`https://python3-dot-parul-arena-2.appspot.com/test?cityname=${city}`)
       .then((res) => {
