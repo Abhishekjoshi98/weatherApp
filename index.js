@@ -5,6 +5,7 @@ function btnClickedCounter() {
   if (clicked < 4) {
     detailsOfCityWheather(Cities[clicked])
     let arrOfCities = document.getElementsByClassName('each-city-names')
+    console.log(arrOfCities)
     arrOfCities[clicked].classList.add('sidebar-table-border')
     clicked++;
   }
@@ -14,10 +15,9 @@ function btnClickedCounter() {
 function detailsOfCityWheather(arg) {
   let ref = document.getElementById('input-data-for-side')
   let city = ref.value;
-  if(!city){
-    city = arg
-  }
+  
   if (city === 'London' || city === 'New York' || city === 'Las Vegas' || city === 'Los Angeles') {
+    city = arg ? arg : city;
     msgCont.innerHTML = ''
     fetch(`https://python3-dot-parul-arena-2.appspot.com/test?cityname=${city}`)
       .then((res) => {
@@ -51,14 +51,15 @@ function detailsOfCityWheather(arg) {
         btn12.addEventListener("click", () => {
           deleteRow(tr);
         });
-      });
-    ref = undefined;
-  city = undefined'
+      }); 
     }
+   
 else {
  msgCont.innerHTML = 'Invalid Search'
 }
+
 }
 function deleteRow(e) {
   e.remove();
 }
+
