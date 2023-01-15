@@ -46,6 +46,7 @@
     width: 95%;
     height: 5%;
     background-color: #ffffff;
+      cursor:pointer;
     display: flex;
     flex-direction: row;
     justify-content: end;
